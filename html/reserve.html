@@ -83,7 +83,7 @@
             customerPhone:$("#reserve-unique-id").val().trim()
         };
         console.log(reservation)
-        $.post("/api/new", reservation)
+        $.post("/api", reservation)
             .then(function(data){
             $(":input").not(":button").val("");
             console.log(data);

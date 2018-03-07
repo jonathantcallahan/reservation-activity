@@ -22,7 +22,7 @@ app.get('/api', (req,res) => {
     res.json(tables);
 })
 
-app.post('/api/new', (req, res) => {
+app.post('/api', (req, res) => {
     if(tables.length < 5){
         tables.push(req.body)
     } else {
